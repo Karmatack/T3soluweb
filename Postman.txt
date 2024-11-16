@@ -1,0 +1,39 @@
+Rellenar la tabla TipoDocumento  (uno por uno)
+
+	URL: http://localhost:8080/api/tipo-documento
+	Método: POST
+		{"nombre": "DNI"}
+
+		{"nombre": "Pasaporte"}
+
+		{"nombre": "Carnet de Extranjería"}
+
+Rellenar la tabla Ubicacion	(uno por uno)
+
+	URL: http://localhost:8080/api/ubicaciones
+	Método: POST
+	{"departamento": "Lima","provincia": "Lima","distrito": "Miraflores"}
+
+	{"departamento": "Cusco","provincia": "Cusco","distrito": "Wanchaq"}
+
+	{"departamento": "Arequipa","provincia": "Arequipa","distrito": "Yanahuara"}
+
+Rellenar la tabla Reclamo	(uno por uno)
+	
+	URL: http://localhost:8080/api/reclamos
+	Método: POST
+
+	{
+  	"tipoDocumento": { "id": 1 },
+  	"numeroDocumento": "12345678",
+  	"apellidos": "Pino",
+  	"nombres": "Kennedy",
+  	"ubicacion": { "id": 1 },
+ 	"domicilio": "Av. cd",
+ 	"correo": "systems.kennedy@gmail.com",
+ 	"telefono": "902985139",
+  	"celular": "911111111",
+  	"fechaHecho": "2024-11-16",
+  	"funcionario": "Público",
+  	"descripcion": "Producto defectuoso recibido en la fecha indicada"
+	}
